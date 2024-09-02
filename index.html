@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Contact Management System</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Management System</h1>
+    <button onclick="showForm()">Add New Contact</button>
+    <div id="contactForm" style="display: none;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <button onclick="addContact()">Save Contact</button>
+    </div>
+    
+    <h2>Contact List</h2>
+    <ul id="contactList"></ul>
+  </div>
+  <script src="logic.js"></script>
+</body>
+</html>
